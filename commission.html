@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <link rel="icon" href="assets/favicon.ico">
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Commission Request | SHOTUDIOS</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/commission.css">
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Background -->
+
+    <div class="bg-light"></div>
+
+    <div class="glass-orb orb1"></div>
+    <div class="glass-orb orb2"></div>
+    <div class="glass-orb orb3"></div>
+
+    <!-- ===========================
+    NAVBAR
+    ============================ -->
+
+    <header>
+
+        <div class="container nav-wrapper">
+
+            <a href="index.html" class="logo">
+                SHOTUDIOS
+            </a>
+
+            <nav>
+
+                <a href="index.html">Home</a>
+
+                <a href="#">Commission</a>
+
+            </nav>
+
+            <a href="index.html" class="nav-button">
+
+            Back
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- ===========================
+    HERO
+    ============================ -->
+
+    <section class="commission-hero">
+
+        <div class="container">
+
+            <div class="hero-badge">
+
+                Commission Form
+
+            </div>
+
+            <h1>
+
+                Let's Start
+                <span>Your Project</span>
+
+            </h1>
+
+            <p>
+
+                Complete the form below to begin your commission.
+                The process only takes a few minutes.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ===========================
+    FORM
+    ============================ -->
+
+    <section class="commission">
+
+        <div class="container commission-layout">
+
+            <!-- LEFT -->
+
+            <div class="commission-form">
+
+                <!-- Service -->
+
+                <div class="glass-card">
+
+                    <h2>
+
+                        Choose Service
+
+                    </h2>
+
+                    <p>
+
+                        Select the service you want to commission.
+
+                    </p>
+
+                    <div class="service-grid" id="serviceGrid">
+
+                    </div>
+
+                </div>
+
+                <!-- Project -->
+
+                <div class="glass-card">
+
+                    <h2>
+
+                        Project Information
+
+                    </h2>
+
+<div class="form-group">
+
+<label for="customerName">
+    Your Name
+</label>
+
+<input
+    type="text"
+    id="customerName"
+    name="customerName"
+    placeholder="e.g. Aokami Aru">
+    
+
+</div>
+
+
+
+
+<div class="form-group">
+
+<label for="customerContact">
+    Contact (Discord, Twitter, WhatsApp, Email, etc)
+</label>
+
+<input
+    id="customerContact"
+    name="customerContact"
+    type="text"
+    placeholder="Discord, WhatsApp, Email, Telegram, etc.">
+
+
+    <small>
+        Please provide at least one way for us to contact you.
+    </small>
+
+</div>
+
+                    <div class="form-group">
+
+                        <label for="projectDescription">
+    Description
+</label>
+
+<textarea
+    rows="12"
+    id="projectDescription"
+    name="projectDescription"
+    placeholder="Explain your project in detail...
+
+• Story
+• Character
+• Mood
+• Reference
+• Color Palette
+• Animation Request">
+</textarea>
+
+<div class="honeypot">
+
+<label for="website">
+    Website
+</label>
+
+<input
+    type="text"
+    id="website"
+    name="website"
+    autocomplete="off"
+    tabindex="-1">
+
+</div>
+
+
+<div class="form-group">
+
+    <label>Reference Files</label>
+
+    <div id="uploadArea" class="upload-area">
+
+    <div class="upload-icon">📁</div>
+
+    <h3>Drop files here</h3>
+
+    <p>or click to browse</p>
+
+</div>
+
+<label for="referenceUpload">
+    Upload Reference Files
+</label>
+
+<input
+    type="file"
+    id="referenceUpload"
+    name="referenceUpload"
+    multiple
+    accept=".png,.jpg,.jpeg,.webp,.mp3,.wav,.psd,.zip,.rar,.7z,.mp4,.mov">
+
+<div id="uploadedFiles" class="uploaded-files"></div>
+
+</div>
+
+                    </div>
+
+                </div>
+
+                <!-- Package -->
+
+                <div class="glass-card">
+
+                    <h2>
+
+                        Select Package
+
+                    </h2>
+
+                    <div class="package-grid" id="packageGrid">
+
+                        <p class="empty-package">
+                            Select a service first.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT -->
+
+            <aside class="commission-summary">
+
+                <div class="summary-card">
+
+                    <h2>
+
+                        Your Order
+
+                    </h2>
+
+                    <div class="summary-item">
+
+                        <span>
+
+                            Service
+
+                        </span>
+
+                        <strong>
+
+                            —
+
+                        </strong>
+
+                    </div>
+
+                    <div class="summary-item">
+
+                        <span>
+
+                            Package
+
+                        </span>
+
+                        <strong>
+
+                            —
+
+                        </strong>
+
+                    </div>
+
+                    <div class="summary-item">
+
+                        <span>
+
+                            Delivery
+
+                        </span>
+
+                        <strong>
+
+                            —
+
+                        </strong>
+
+                    </div>
+
+                    <div class="summary-item total">
+
+                        <span>
+
+                            Estimated Price
+
+                        </span>
+
+                        <strong>
+
+                            —
+
+                        </strong>
+
+                    </div>
+
+                    <button
+                        class="primary-btn">
+
+                        Continue →
+
+                    </button>
+
+                    <div class="upload-progress">
+
+    <div class="upload-progress-bar"></div>
+
+</div>
+
+<p class="upload-progress-text">
+
+    0%
+
+</p>
+
+                </div>
+
+                <div class="help-card">
+
+                    <h3>
+
+                        Need Help?
+
+                    </h3>
+
+                    <p>
+
+                        If you're unsure which package is right for you,
+                        feel free to contact us before ordering.
+
+                    </p>
+
+                    <a href="#">
+
+                        Discord
+
+                    </a>
+
+                    <a href="#">
+
+                        WhatsApp
+
+                    </a>
+
+                    <a href="#">
+
+                        FAQ
+
+                    </a>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </section>
+
+
+
+
+    
+
+
+
+<div id="successModal" class="success-modal">
+
+    <div class="success-card">
+
+        <div class="success-icon">
+            ✅
+        </div>
+
+        <h2>
+            Commission Submitted
+        </h2>
+
+        <p>
+            Thank you for your order.
+        </p>
+
+        <div class="success-summary">
+
+            <div>
+                <span>Commission ID</span>
+                <strong id="modalCommission"></strong>
+            </div>
+
+            <div>
+                <span>Service</span>
+                <strong id="modalService"></strong>
+            </div>
+
+            <div>
+                <span>Package</span>
+                <strong id="modalPackage"></strong>
+            </div>
+
+            <div>
+                <span>Price</span>
+                <strong id="modalPrice"></strong>
+            </div>
+
+            <div>
+                <span>Delivery</span>
+                <strong id="modalDelivery"></strong>
+            </div>
+
+            <div>
+                <span>Contact</span>
+                <strong id="modalContact"></strong>
+            </div>
+
+        </div>
+
+        <button id="closeSuccessModal" class="primary-btn">
+
+            Back to Home
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="js/commission.js"></script>
+</body>
+
+</html>

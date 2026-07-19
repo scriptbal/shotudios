@@ -1,0 +1,7 @@
+node_modules/
+.vercel/
+.env.local
+uploads/
+api/data/*.txt
+api/data/*.json
+Web template.jpg
