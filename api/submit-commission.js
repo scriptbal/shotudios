@@ -33,7 +33,7 @@ const form = new IncomingForm({
 
     keepExtensions:true,
 
-    uploadDir:"./uploads",
+    uploadDir:"/tmp",
 
     keepFiles:true,
 
