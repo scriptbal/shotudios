@@ -27,33 +27,33 @@ if (header) {
    Mouse Parallax Video
 =========================================== */
 
-const video = document.querySelector(".video-glass");
+// const video = document.querySelector(".video-glass");
 
-if (video) {
+// if (video) {
 
-    window.addEventListener("mousemove", (e) => {
+//     window.addEventListener("mousemove", (e) => {
 
-        const x =
-            (window.innerWidth / 2 - e.clientX) / 60;
+//         const x =
+//             (window.innerWidth / 2 - e.clientX) / 60;
 
-        const y =
-            (window.innerHeight / 2 - e.clientY) / 60;
+//         const y =
+//             (window.innerHeight / 2 - e.clientY) / 60;
 
-        video.style.transform = `
-            rotateY(${-x}deg)
-            rotateX(${y}deg)
-            translateY(-6px)
-        `;
+//         video.style.transform = `
+//             rotateY(${-x}deg)
+//             rotateX(${y}deg)
+//             translateY(-6px)
+//         `;
 
-    });
+//     });
 
-    window.addEventListener("mouseleave", () => {
+//     window.addEventListener("mouseleave", () => {
 
-        video.style.transform = "";
+//         video.style.transform = "";
 
-    });
+//     });
 
-}
+// }
 
 /* ===========================================
    Reveal Animation
