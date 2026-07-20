@@ -98,32 +98,11 @@ return new Promise((resolve,reject)=>{
 
 function generateCommissionNumber() {
 
-    const counterFile = path.join(
-        process.cwd(),
-        "api",
-        "data",
-        "commission_counter.txt"
+    const random = Math.floor(
+        Math.random() * 10000000000
     );
 
-    let counter = 0;
-
-    if (fs.existsSync(counterFile)) {
-
-        counter = parseInt(
-            fs.readFileSync(counterFile, "utf8"),
-            10
-        ) || 0;
-
-    }
-
-    counter++;
-
-    fs.writeFileSync(
-        counterFile,
-        String(counter)
-    );
-
-    return `CID#${String(counter).padStart(10, "0")}`;
+    return `CID#${String(random).padStart(10, "0")}`;
 
 }
 
