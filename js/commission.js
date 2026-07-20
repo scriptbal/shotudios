@@ -111,7 +111,7 @@ let packages = [
     delivery: "14 Days",
     description: "Fullbody",
     status: "active"
-}
+},
 
 
   {
