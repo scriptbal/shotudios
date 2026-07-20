@@ -96,37 +96,34 @@ return new Promise((resolve,reject)=>{
 }
 
 
-function generateCommissionNumber(){
+function generateCommissionNumber() {
 
-    const now = new Date();
-
-    const year = now.getFullYear();
-
-    const month = String(
-        now.getMonth()+1
-    ).padStart(2,"0");
-
-    const day = String(
-        now.getDate()
-    ).padStart(2,"0");
-
-    const hour = String(
-        now.getHours()
-    ).padStart(2,"0");
-
-    const minute = String(
-        now.getMinutes()
-    ).padStart(2,"0");
-
-    const second = String(
-        now.getSeconds()
-    ).padStart(2,"0");
-
-    const random = Math.floor(
-        1000 + Math.random()*9000
+    const counterFile = path.join(
+        process.cwd(),
+        "api",
+        "data",
+        "commission_counter.txt"
     );
 
-    return `COM-${year}${month}${day}-${hour}${minute}${second}-${random}`;
+    let counter = 0;
+
+    if (fs.existsSync(counterFile)) {
+
+        counter = parseInt(
+            fs.readFileSync(counterFile, "utf8"),
+            10
+        ) || 0;
+
+    }
+
+    counter++;
+
+    fs.writeFileSync(
+        counterFile,
+        String(counter)
+    );
+
+    return `CID#${String(counter).padStart(10, "0")}`;
 
 }
 
