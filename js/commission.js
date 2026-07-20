@@ -36,6 +36,12 @@ let services = [
     id: 2,
     name: "VTuber Rigging",
     available: true
+  },
+
+  {
+    id: 3,
+    name: "Animation",
+    available: false
   }
 
 ];
@@ -104,6 +110,37 @@ let packages = [
     price_idr: 1999000,
     delivery: "14 Days",
     description: "Fullbody",
+    status: "active"
+}
+
+
+  {
+    id: 7,
+    service_id: 3,
+    name: "Basic",
+    price: 50,
+    price_idr: 800000,
+    delivery: "7 Days",
+    status: "active"
+},
+
+{
+    id: 8,
+    service_id: 3,
+    name: "Standard",
+    price: 120,
+    price_idr: 1900000,
+    delivery: "14 Days",
+    status: "active"
+},
+
+{
+    id: 9,
+    service_id: 3,
+    name: "Premium",
+    price: 250,
+    price_idr: 4000000,
+    delivery: "30 Days",
     status: "active"
 }
 
