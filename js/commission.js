@@ -85,7 +85,7 @@ let packages = [
     service_id: 2,
     name: "Basic",
     price: 50,
-    price_idr: 899000,
+    price_idr: 699000,
     delivery: "7 Days",
     description: "Bust-up",
     status: "active"
@@ -96,7 +96,7 @@ let packages = [
     service_id: 2,
     name: "Standard",
     price: 70,
-    price_idr: 1499000,
+    price_idr: 999000,
     delivery: "10 Days",
     description: "Halfbody",
     status: "active"
@@ -107,7 +107,7 @@ let packages = [
     service_id: 2,
     name: "Premium",
     price: 150,
-    price_idr: 1999000,
+    price_idr: 1499000,
     delivery: "14 Days",
     description: "Fullbody",
     status: "active"
