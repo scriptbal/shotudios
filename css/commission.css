@@ -944,17 +944,6 @@ NAV BUTTON FIX
 }
 
 
-.nav-button:hover{
-
-    color:#3B82F6 !important;
-
-    text-decoration:none !important;
-
-    transform:translateY(-2px);
-
-}
-
-
 /* hilangkan efek visited browser */
 
 .nav-button:visited{
@@ -965,12 +954,36 @@ NAV BUTTON FIX
 
 }
 
+.nav-button:hover{
+
+    color:#fff !important;
+
+    text-decoration:none !important;
+
+}
+
+
+
+
+
+
 
 /* hilangkan garis bawah semua navbar link */
 
 nav a,
-.logo,
 .nav-button{
+
+    text-decoration:none !important;
+
+}
+
+
+
+/* ==========================
+   LOGO FIX
+========================== */
+
+.logo{
 
     text-decoration:none !important;
 
@@ -1210,3 +1223,5 @@ border:none;
     font-size:12px;
 
 }
+
+

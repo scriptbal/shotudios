@@ -11,12 +11,13 @@
 
     <title>
 
-        SHOTUDIOS | Premium Live2D Rigging
+        Shotudios | Premium Live2D Rigging
 
     </title>
 
  <link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/vtuber-rigging.css">
+ <link rel="stylesheet" href="../css/contact-modal.css">
+ <link rel="stylesheet" href="../css/vtuber-rigging.css">
 
     <link
         rel="preconnect"
@@ -30,6 +31,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+
+        <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 
@@ -85,7 +90,7 @@ stroke-linejoin="round">
                 href="../index.html"
                 class="logo">
 
-                SHOTUDIOS
+                Shotudios
 
             </a>
 
@@ -115,21 +120,21 @@ stroke-linejoin="round">
 
                 </a>
 
-                <a href="../commission.html">
-
-                    Contact
-
-                </a>
-
+                <button
+    type="button"
+    class="nav-link-button"
+    data-contact-modal>
+    Contact Us
+</button>
             </nav>
 
-            <a
-                href="../commission.html"
-                class="nav-button">
+<a
+href="../commission.html"
+class="nav-button">
 
-                Order Now
+Order Now
 
-            </a>
+</a>
 
         </div>
 
@@ -140,7 +145,7 @@ stroke-linejoin="round">
     =========================== -->
 
     <section
-        class="hero service-hero"
+        class="service-hero"
         id="home">
 
         <div class="container hero-grid">
@@ -1411,7 +1416,7 @@ Commission
 
                     <p>
 
-                        Please include SHOTUDIOS as the Live2D rigger.
+                        Please include Shotudios as the Live2D rigger.
                         After your debut, we may request permission to
                         showcase the finished model as part of our portfolio.
 
@@ -1658,13 +1663,14 @@ Commission
 
                     </a>
 
-                    <a
-                        href="https://vgen.co/shossuki/portfolio"
-                        class="secondary-btn">
+<button
+    type="button"
+    class="secondary-btn"
+    data-contact-modal>
 
-                        View Portfolio
+    Contact Us
 
-                    </a>
+</button>
 
                 </div>
 
@@ -1689,7 +1695,7 @@ Commission
 
                 <h2>
 
-                    SHOTUDIOS
+                    Shotudios
 
                 </h2>
 
@@ -1758,13 +1764,17 @@ Commission
 
         <div class="footer-bottom">
 
-            © 2026 SHOTUDIOS.
+            © 2026 Shotudios.
             All Rights Reserved.
 
         </div>
 
     </footer>
 
+
+
+
+    <SCript src="../js/contact-modal.js"></SCript>
     <script src="../js/script.js"></script>
 
 

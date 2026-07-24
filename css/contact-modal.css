@@ -1,0 +1,481 @@
+
+
+
+/* =========================================
+   MODAL
+========================================= */
+
+.contact-modal{
+
+    position:fixed;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:9999;
+}
+
+.contact-modal.active{
+
+    opacity:1;
+    visibility:visible;
+
+}
+
+/* =========================================
+   BACKDROP
+========================================= */
+
+.contact-overlay{
+
+    position:absolute;
+    inset:0;
+
+    background:rgba(15, 15, 15, 0.048);
+
+    backdrop-filter:blur(10px);
+
+}
+
+/* =========================================
+   BOX
+========================================= */
+
+.contact-box{
+
+    position:relative;
+
+    z-index:2;
+
+    width:min(980px,92vw);
+
+    max-height:82vh;
+
+    overflow:hidden;
+
+    padding:42px;
+
+    border-radius:32px;
+
+    background:rgb(255, 255, 255);
+
+    backdrop-filter:blur(22px);
+
+    box-shadow:
+        0 25px 80px rgba(0,0,0,.18);
+
+    animation:modalShow .35s ease;
+
+}
+
+/* =========================================
+   CLOSE
+========================================= */
+
+.contact-close{
+
+    position:absolute;
+
+    top:22px;
+    right:22px;
+
+    width:46px;
+    height:46px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.25s;
+
+}
+
+.contact-close:hover{
+
+    transform:rotate(90deg);
+
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.contact-box h2{
+
+    margin:0;
+
+}
+
+.contact-desc{
+
+    color:#666;
+
+    margin-bottom:34px;
+
+    font-size:18px;
+    font-weight: 300;
+
+
+
+}
+
+/* =========================================
+   GRID
+========================================= */
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.contact-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    background:#fff;
+
+    text-decoration:none;
+
+    color:#222;
+
+    transition:.25s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 14px 30px rgba(0,0,0,.08);
+
+}
+
+.contact-icon{
+
+    width:56px;
+    height:56px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:16px;
+
+    background:#eef2ff;
+
+    color:#5575ff;
+
+    font-size:24px;
+
+}
+
+.contact-info{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.contact-info span{
+
+    font-weight:600;
+
+    font-size:18px;
+
+}
+
+.contact-info small{
+
+    color:#777;
+
+    margin-top:4px;
+
+}
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.contact-divider{
+
+    margin:32px 0;
+
+    height:1px;
+
+    background:#ececec;
+
+}
+
+/* =========================================
+   COMMISSION
+========================================= */
+
+.commission-box{
+
+    text-align:center;
+
+}
+
+.commission-box h3{
+
+    font-size:30px;
+
+}
+
+.commission-box p{
+
+    color:#666;
+
+    margin:10px 0 24px;
+
+}
+
+/* =========================================
+   SUPPORT
+========================================= */
+
+.support-box{
+
+    text-align:center;
+
+}
+
+.support-links{
+
+    margin-top:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:14px;
+
+}
+
+.support-links a{
+
+    padding:10px 20px;
+
+    border-radius:999px;
+
+    background:#f4f4f4;
+
+    color:#222;
+
+    text-decoration:none;
+
+    transition:.25s;
+
+}
+
+.support-links a:hover{
+
+    background:#4d6fff;
+
+    color:#fff;
+
+}
+
+/* =========================================
+   SCROLL TEXT
+========================================= */
+
+.modal-scroll-indicator{
+
+    position:absolute;
+
+    bottom:18px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    z-index:3;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:6px;
+
+    color:#fff;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    animation:bounce 1.6s infinite;
+
+}
+
+.modal-scroll-indicator i{
+
+    font-size:18px;
+
+}
+
+/* =========================================
+   ANIMATION
+========================================= */
+
+@keyframes bounce{
+
+    0%,100%{
+
+        transform:translate(-50%,0);
+
+    }
+
+    50%{
+
+        transform:translate(-50%,8px);
+
+    }
+
+}
+
+@keyframes modalShow{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px) scale(.96);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:none;
+
+    }
+
+}
+
+
+
+/* ==========================
+   CONTACT MODAL LOGO
+========================== */
+
+.contact-logo{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+
+    background:linear-gradient(
+        90deg,
+        #3B82F6,
+        #8B5CF6
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+    color:transparent;
+
+    letter-spacing:-1px;
+
+}
+
+
+
+/* ==========================
+   CONTACT ICON COLORS
+========================== */
+
+.contact-icon i{
+    color:inherit;
+}
+
+
+/* Discord */
+
+.contact-card:nth-child(1) .contact-icon{
+    color:#5865F2;
+}
+
+
+/* Instagram */
+
+.contact-card:nth-child(2) .contact-icon{
+    color:#E1306C;
+}
+
+
+/* X */
+
+.contact-card:nth-child(3) .contact-icon{
+    color:#000;
+}
+
+
+/* TikTok */
+
+.contact-card:nth-child(4) .contact-icon{
+    color:#000;
+}
+
+
+/* Email */
+
+.contact-card:nth-child(5) .contact-icon{
+    color:#EA4335;
+}
+
+
+/* WhatsApp */
+
+.contact-card:nth-child(6) .contact-icon{
+    color:#25D366;
+}
+
+
+body.modal-open{
+
+    overflow:hidden;
+
+}

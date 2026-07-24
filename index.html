@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <meta charset="UTF-8">
 
@@ -9,9 +12,11 @@
         name="viewport"
         content="width=device-width, initial-scale=1.0">
 
-    <title>SHOTUDIOS</title>
+    <title>Shotudios</title>
 
-    <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/contact-modal.css">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -21,6 +26,29 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+
+
+    <meta
+    name="description"
+    content="Shotudios provides professional Live2D VTuber Rigging, MV Commission, Animation, and creative services for creators worldwide.">
+
+<meta
+    name="keywords"
+    content="Live2D, VTuber Rigging, MV Commission, Animation, Live2D Commission, SHOTUDIOS">
+
+<meta
+    name="author"
+    content="Shotudios">
+
+<link
+    rel="canonical"
+    href="https://shotudios.com/">
+
+<link
+    rel="icon"
+    type="image/png"
+    href="/assets/favicon.png">
+
 
 </head>
 
@@ -64,7 +92,7 @@ stroke-linejoin="round">
         <div class="container nav-wrapper">
 
 <a href="index.html" class="logo">
-    SHOTUDIOS
+    Shotudios
 </a>
 
             <nav>
@@ -81,11 +109,15 @@ stroke-linejoin="round">
 
             </nav>
 
-            <button class="nav-button">
+<button
+    type="button"
+    class="nav-button"
+    data-contact-modal
+    aria-label="Open contact options">
 
-                Contact Us
+    Contact Us
 
-            </button>
+</button>
 
         </div>
 
@@ -148,10 +180,11 @@ stroke-linejoin="round">
                 <div class="video-glass">
 
                 <iframe
+                loading="lazy"
                 title="MV Commission"
 
                     src="https://www.youtube.com/embed/zvcTo3NV6fY?autoplay=1&mute=1&loop=1&playlist=zvcTo3NV6fY&controls=0&rel=0&modestbranding=1&playsinline=1&vq=hd1080"
-                    title="SHOTUDIOS Preview"
+                    
                     frameborder="0"
                     allow="autoplay; encrypted-media; fullscreen"
                     allowfullscreen>
@@ -190,12 +223,13 @@ stroke-linejoin="round">
 
             <!-- VIDEO BACKGROUND -->
     <div class="card-video">
-<iframe
-    title="MV Commission"
-    src="https://www.youtube.com/embed/VSI5GSON1_E?start=60&autoplay=1&mute=1&loop=1&playlist=VSI5GSON1_E&controls=0&rel=0&modestbranding=1&playsinline=1&vq=hd480"
-    allow="autoplay; encrypted-media"
-    frameborder="0">
-</iframe>
+        <iframe
+                loading="lazy"
+            title="MV Commission"
+            src="https://www.youtube.com/embed/VSI5GSON1_E?start=60&autoplay=1&mute=1&loop=1&playlist=VSI5GSON1_E&controls=0&rel=0&modestbranding=1&playsinline=1&vq=hd480"
+            allow="autoplay; encrypted-media"
+            frameborder="0">
+        </iframe>
     </div>
 
             <!-- OVERLAY GELAP UNTUK KONTRAS -->
@@ -221,6 +255,7 @@ stroke-linejoin="round">
     <!-- VIDEO BACKGROUND -->
     <div class="card-video">
         <iframe
+                loading="lazy"
     title="VTuber Rigging Commission"
             src="https://www.youtube.com/embed/zvcTo3NV6fY?autoplay=1&mute=1&loop=1&playlist=zvcTo3NV6fY&controls=0&rel=0&modestbranding=1&playsinline=1&vq=hd480"
             allow="autoplay; encrypted-media"
@@ -275,12 +310,12 @@ stroke-linejoin="round">
     <!-- VIDEO BACKGROUND -->
     <div class="card-video">
         <iframe
-<iframe
-    title="Animation"
-    src="https://www.youtube.com/embed/osGpV2ytiU0?autoplay=1&mute=1&loop=1&playlist=osGpV2ytiU0&controls=0&rel=0&modestbranding=1&playsinline=1&vq=hd480"
-    allow="autoplay; encrypted-media"
-    frameborder="0">
-</iframe>
+                loading="lazy"
+            title="Animation"
+            src="https://www.youtube.com/embed/osGpV2ytiU0?autoplay=1&mute=1&loop=1&playlist=osGpV2ytiU0&controls=0&rel=0&modestbranding=1&playsinline=1&vq=hd480"
+            allow="autoplay; encrypted-media"
+            frameborder="0">
+        </iframe>
     </div>
 
     <!-- OVERLAY GELAP UNTUK KONTRAS -->
@@ -328,6 +363,7 @@ LIVE2D COURSE
             <div class="video-glass">
 
                 <iframe
+                loading="lazy"
                     title="Live2D Course"
                     src="https://www.youtube.com/embed/zvcTo3NV6fY?autoplay=1&mute=1&loop=1&playlist=zvcTo3NV6fY&controls=0&rel=0&modestbranding=1&playsinline=1&vq=hd720"
                     allow="autoplay; encrypted-media; fullscreen"
@@ -455,7 +491,7 @@ PORTFOLIO
 
             <h2>VTuber Commission</h2>
 
-            <a href="https://vgen.co/shossuki/portfolio" class="portfolio-more">
+            <a href="https://vgen.co/shossuki/portfolio" class="portfolio-more" rel="noopener">
 
                 See More →
 
@@ -467,37 +503,53 @@ PORTFOLIO
 
             <div class="portfolio-item">
                                                         <img
-                    src="/assets/images/ComingsoonV.jpg"
-                    alt="VTuber Portfolio">
+    src="/assets/images/ComingsoonV.jpg"
+    loading="lazy"
+    decoding="async"
+    width="640"
+    height="360"
+    alt="Live2D VTuber Rigging Portfolio 1">
                                 <div class="portfolio-overlay">
-                                    <h3>MV Project 01</h3>
+                                    <h3>VTuber Project 01</h3>
                                 </div>
                             </div>
 
                             <div class="portfolio-item">
                                                         <img
-                    src="/assets/images/ComingsoonV.jpg"
-                    alt="VTuber Portfolio">
+    src="/assets/images/ComingsoonV.jpg"
+    loading="lazy"
+    decoding="async"
+    width="640"
+    height="360"
+    alt="Live2D VTuber Rigging Portfolio 2">
                                 <div class="portfolio-overlay">
-                                    <h3>MV Project 02</h3>
+                                    <h3>VTuber Project 02</h3>
                                 </div>
                             </div>
 
                             <div class="portfolio-item">
                                                         <img
-                    src="/assets/images/ComingsoonV.jpg"
-                    alt="VTuber Portfolio">
+    src="/assets/images/ComingsoonV.jpg"
+    loading="lazy"
+    decoding="async"
+    width="640"
+    height="360"
+    alt="Live2D VTuber Rigging Portfolio 3">
                                 <div class="portfolio-overlay">
-                                    <h3>MV Project 03</h3>
+                                    <h3>VTuber Project 03</h3>
                                 </div>
                             </div>
 
                             <div class="portfolio-item">
                                                         <img
-                    src="/assets/images/ComingsoonV.jpg"
-                    alt="VTuber Portfolio">
+    src="/assets/images/ComingsoonV.jpg"
+    loading="lazy"
+    decoding="async"
+    width="640"
+    height="360"
+    alt="Live2D VTuber Rigging Portfolio 3">
                                 <div class="portfolio-overlay">
-                                    <h3>MV Project 04</h3>
+                                    <h3>VTuber Project 04</h3>
                                 </div>
                             </div>
 
@@ -525,8 +577,12 @@ PORTFOLIO
 
             <div class="portfolio-item">
                                                         <img
-                    src="/assets/images/ComingsoonV.jpg"
-                    alt="VTuber Portfolio">
+    src="/assets/images/ComingsoonV.jpg"
+    loading="lazy"
+    decoding="async"
+    width="640"
+    height="360"
+    alt="MV Cover Portfolio 1">
                                 <div class="portfolio-overlay">
                                     <h3>MV Project 01</h3>
                                 </div>
@@ -534,8 +590,12 @@ PORTFOLIO
 
                             <div class="portfolio-item">
                                                         <img
-                    src="/assets/images/ComingsoonV.jpg"
-                    alt="VTuber Portfolio">
+    src="/assets/images/ComingsoonV.jpg"
+    loading="lazy"
+    decoding="async"
+    width="640"
+    height="360"
+    alt="MV Cover Portfolio 2">
                                 <div class="portfolio-overlay">
                                     <h3>MV Project 02</h3>
                                 </div>
@@ -543,8 +603,12 @@ PORTFOLIO
 
                             <div class="portfolio-item">
                                                         <img
-                    src="/assets/images/ComingsoonV.jpg"
-                    alt="VTuber Portfolio">
+    src="/assets/images/ComingsoonV.jpg"
+    loading="lazy"
+    decoding="async"
+    width="640"
+    height="360"
+    alt="MV Cover Portfolio 3">
                                 <div class="portfolio-overlay">
                                     <h3>MV Project 03</h3>
                                 </div>
@@ -552,8 +616,12 @@ PORTFOLIO
 
                             <div class="portfolio-item">
                                                         <img
-                    src="/assets/images/ComingsoonV.jpg"
-                    alt="VTuber Portfolio">
+    src="/assets/images/ComingsoonV.jpg"
+    loading="lazy"
+    decoding="async"
+    width="640"
+    height="360"
+    alt="MV Cover Portfolio 4">
                                 <div class="portfolio-overlay">
                                     <h3>MV Project 04</h3>
                                 </div>
@@ -572,7 +640,7 @@ PORTFOLIO
 
             <h2>Animation Commission</h2>
 
-            <a href="https://vgen.co/shossuki/portfolio" class="portfolio-more">
+            <a href="https://vgen.co/shossuki/portfolio" class="portfolio-more" rel="noopener">
 
                 See More →
 
@@ -584,37 +652,53 @@ PORTFOLIO
 
             <div class="portfolio-item">
                                                         <img
-                    src="/assets/images/ComingsoonV.jpg"
-                    alt="VTuber Portfolio">
+    src="/assets/images/ComingsoonV.jpg"
+    loading="lazy"
+    decoding="async"
+    width="640"
+    height="360"
+    alt="Animation Portfolio 1">
                                 <div class="portfolio-overlay">
-                                    <h3>MV Project 01</h3>
+                                    <h3>Animation Project 01</h3>
                                 </div>
                             </div>
 
                             <div class="portfolio-item">
                                                         <img
-                    src="/assets/images/ComingsoonV.jpg"
-                    alt="VTuber Portfolio">
+    src="/assets/images/ComingsoonV.jpg"
+    loading="lazy"
+    decoding="async"
+    width="640"
+    height="360"
+    alt="Animation Portfolio 2">
                                 <div class="portfolio-overlay">
-                                    <h3>MV Project 02</h3>
+                                    <h3>Animation Project 02</h3>
                                 </div>
                             </div>
 
                             <div class="portfolio-item">
                                                         <img
-                    src="/assets/images/ComingsoonV.jpg"
-                    alt="VTuber Portfolio">
+    src="/assets/images/ComingsoonV.jpg"
+    loading="lazy"
+    decoding="async"
+    width="640"
+    height="360"
+    alt="Animation Portfolio 3">
                                 <div class="portfolio-overlay">
-                                    <h3>MV Project 03</h3>
+                                    <h3>Animation Project 03</h3>
                                 </div>
                             </div>
 
                             <div class="portfolio-item">
                                                         <img
-                    src="/assets/images/ComingsoonV.jpg"
-                    alt="VTuber Portfolio">
+    src="/assets/images/ComingsoonV.jpg"
+    loading="lazy"
+    decoding="async"
+    width="640"
+    height="360"
+    alt="Animation Portfolio 4">
                                 <div class="portfolio-overlay">
-                                    <h3>MV Project 04</h3>
+                                    <h3>Animation Project 04</h3>
                                 </div>
                             </div>
 
@@ -650,7 +734,13 @@ GUARANTEE SECTION
 
                     <div class="guarantee-icon">
 
-        <img src="assets/icons/globe.avif" alt="Worldwide Services">
+        <img
+    src="assets/icons/globe.avif"
+    width="64"
+    height="64"
+    loading="lazy"
+    decoding="async"
+    alt="Worldwide Services">
 
     </div>
 
@@ -746,11 +836,14 @@ TESTIMONIAL
                 <span class="dot"></span>
             </div>
 
-            <button 
-    onclick="window.open('https://www.fiverr.com/comator/make-live2d-showcase-comission', '_blank')"
->
-    See More
-</button>
+            <button
+                type="button"
+                onclick="window.open('https://www.fiverr.com/comator/make-live2d-showcase-comission','_blank')"
+                aria-label="Open Fiverr testimonials">
+
+                See More
+
+            </button>
 
         </div>
 
@@ -760,6 +853,7 @@ TESTIMONIAL
             <div class="video-glass">
 
             <iframe
+                loading="lazy"
             title="Testimonial"
 
                 src="https://www.youtube.com/embed/zvcTo3NV6fY?autoplay=1&mute=1&loop=1&playlist=zvcTo3NV6fY&controls=0&rel=0&modestbranding=1&playsinline=1&vq=hd480"
@@ -804,10 +898,15 @@ TESTIMONIAL
 
                 </p>
 
-                <button onclick="window.open('commission.html')" class="primary-btn">
+<button
+    type="button"
+    class="primary-btn"
+    data-contact-modal
+    aria-label="Open contact options">
 
-                    Contact Us
-                </button>
+    Contact Us
+
+</button>
 
             </div>
 
@@ -830,7 +929,7 @@ FOOTER
 
         <div class="footer-brand">
 
-            <h2>SHOTUDIOS</h2>
+            <h2>Shotudios</h2>
 
             <p>
 
@@ -893,14 +992,15 @@ FOOTER
 
     <div class="footer-bottom">
 
-        © 2026 SHOTUDIOS. All Rights Reserved.
+        © 2026 Shotudios. All Rights Reserved.
 
     </div>
 
 </footer>
 
-    <script src="js/script.js"></script>
 
+    <script src="js/script.js"></script>
+    <script src="js/contact-modal.js"></script>
 
 
 

@@ -822,3 +822,37 @@ nav{
 
 
 }
+
+
+
+
+
+/* ==========================
+   NAV BUTTON FIX
+========================== */
+
+.nav-button{
+
+    border:none;
+
+    outline:none;
+
+    font-family:"Outfit",sans-serif;
+
+    cursor:pointer;
+
+    appearance:none;
+
+    -webkit-appearance:none;
+
+}
+
+
+.nav-button:focus,
+.nav-button:focus-visible{
+
+    outline:none;
+
+    box-shadow:none;
+
+}

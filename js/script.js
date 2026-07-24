@@ -321,3 +321,108 @@ if (backToTop) {
     });
 
 }
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================
+   CONTACT MODAL
+========================== */
+
+const modal = document.getElementById("contactModal");
+
+const openButtons = [
+    document.getElementById("openContactModal"),
+    document.getElementById("openContactModal2")
+];
+
+const closeButton = document.getElementById("closeContactModal");
+
+const overlay = document.querySelector(".contact-overlay");
+
+const modalBox = document.querySelector(".contact-box");
+
+
+function openModal(){
+
+    modal.classList.add("active");
+
+    modal.setAttribute("aria-hidden","false");
+
+    document.body.classList.add("modal-open");
+
+}
+
+
+function closeModal(){
+
+    modal.classList.remove("active");
+
+    modal.setAttribute("aria-hidden","true");
+
+    document.body.classList.remove("modal-open");
+
+}
+
+
+openButtons.forEach(button=>{
+
+    if(!button) return;
+
+    button.addEventListener("click",openModal);
+
+});
+
+
+if(closeButton){
+
+    closeButton.addEventListener("click",closeModal);
+
+}
+
+
+if(overlay){
+
+    overlay.addEventListener("click",closeModal);
+
+}
+
+
+/* ESC */
+
+document.addEventListener("keydown",(e)=>{
+
+    if(e.key==="Escape" && modal.classList.contains("active")){
+
+        closeModal();
+
+    }
+
+});
+
+
+
+
+/* ==========================
+   SCROLL LOCK
+========================== */
+
+modal.addEventListener("wheel",function(e){
+
+    if(!modal.classList.contains("active")) return;
+
+    e.preventDefault();
+
+    modalBox.scrollTop += e.deltaY;
+
+},{passive:false});
+
+
+
