@@ -78,7 +78,7 @@ function sendDiscord(
                 ),
 
             "footer" => [
-                "text" => "SHOTUDIOS Commission System"
+                "text" => "Shotudios Commission System"
             ],
 
             "timestamp" => gmdate("c")
