@@ -1260,3 +1260,115 @@ border:none;
 
 }
 
+
+
+
+
+
+/* =====================================
+   PAGE TRANSITION
+===================================== */
+
+
+.page-transition{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:999999;
+
+
+    background:
+
+    radial-gradient(
+        circle,
+        #ffffff 0%,
+        #ecf1ff 45%,
+        #c7d5fd 100%
+    );
+
+
+    clip-path:
+
+    circle(
+        0% at 50% 50%
+    );
+
+
+    opacity:0;
+
+
+    transition:
+
+    clip-path .9s cubic-bezier(
+        .76,
+        0,
+        .24,
+        1
+    ),
+
+    opacity .5s ease;
+
+
+    pointer-events:none;
+
+}
+
+
+
+.page-transition.active{
+
+
+    opacity:1;
+
+
+    clip-path:
+
+    circle(
+        150% at 50% 50%
+    );
+
+
+}
+
+
+
+/* =========================
+   PAGE EXIT FADE
+========================= */
+
+
+body.page-exit > *:not(.page-transition){
+
+
+    animation:
+
+    pageFadeOut .45s ease forwards;
+
+
+}
+
+
+
+@keyframes pageFadeOut{
+
+
+    from{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+
+    to{
+
+        opacity:0;
+
+        transform:translateY(-20px);
+
+    }
+
+}

@@ -6,24 +6,44 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     try {
 
-        // Load reusable modal
-        const response = await fetch("/components/contact-modal.html");
+        const scriptPath = document
+            .querySelector('script[src*="contact-modal.js"]')
+            .src;
+
+
+        const basePath = scriptPath
+            .replace(/js\/contact-modal\.js.*$/, "");
+
+
+        const modalPath = basePath + "components/contact-modal.html";
+
+
+        const response = await fetch(modalPath);
+
 
         if (!response.ok) {
             throw new Error("Failed to load contact-modal.html");
         }
 
+
         const html = await response.text();
 
-        // Masukkan modal ke body
-        document.body.insertAdjacentHTML("beforeend", html);
 
-        // Aktifkan modal
+        document.body.insertAdjacentHTML(
+            "beforeend",
+            html
+        );
+
+
         initializeContactModal();
 
-    } catch (error) {
 
-        console.error("Contact Modal:", error);
+    } catch(error){
+
+        console.error(
+            "Contact Modal:",
+            error
+        );
 
     }
 
@@ -38,6 +58,8 @@ function initializeContactModal() {
 
     const modal = document.getElementById("contactModal");
 
+    console.log("Modal element:", modal);
+
     if (!modal) return;
 
     const modalBox = modal.querySelector(".contact-box");
@@ -46,7 +68,10 @@ function initializeContactModal() {
 
     const openButtons = document.querySelectorAll("[data-contact-modal]");
 
-
+console.log(
+    "Contact buttons found:",
+    openButtons.length
+);
     function openModal() {
 
         modal.classList.add("active");

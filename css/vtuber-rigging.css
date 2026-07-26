@@ -752,7 +752,7 @@ QUICK FEATURE
 
     135deg,
 
-    rgba(79,140,255,.12),
+    rgba(255, 255, 255, 0.12),
 
     rgba(255,255,255,.7)
 
@@ -998,7 +998,7 @@ COMPARISON TABLE
 
     180deg,
 
-    rgba(79,140,255,.08),
+    rgba(255, 255, 255, 0.08),
 
     rgba(255,255,255,.2)
 
@@ -1283,7 +1283,7 @@ OTHER SERVICES
 
     radial-gradient(
 
-        rgba(79,140,255,.12),
+        rgba(255, 255, 255, 0.12),
 
         transparent 70%
 
@@ -1325,7 +1325,7 @@ OTHER SERVICES
 
         135deg,
 
-        rgba(79,140,255,.10),
+        rgba(255, 255, 255, 0.1),
 
         rgba(255,255,255,.7)
 
@@ -1722,7 +1722,7 @@ CTA
 
     radial-gradient(
 
-        rgba(79,140,255,.16),
+        rgba(255, 255, 255, 0.16),
 
         transparent 70%
 
@@ -2207,5 +2207,118 @@ BIG CURRENCY SWITCHER
     font-family:"Outfit",sans-serif;
 
     cursor:pointer;
+
+}
+
+
+
+
+
+
+/* =====================================
+   PAGE TRANSITION
+===================================== */
+
+
+.page-transition{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:999999;
+
+
+    background:
+
+    radial-gradient(
+        circle,
+        #ffffff 0%,
+        #ecf1ff 45%,
+        #c7d5fd 100%
+    );
+
+
+    clip-path:
+
+    circle(
+        0% at 50% 50%
+    );
+
+
+    opacity:0;
+
+
+    transition:
+
+    clip-path .9s cubic-bezier(
+        .76,
+        0,
+        .24,
+        1
+    ),
+
+    opacity .5s ease;
+
+
+    pointer-events:none;
+
+}
+
+
+
+.page-transition.active{
+
+
+    opacity:1;
+
+
+    clip-path:
+
+    circle(
+        150% at 50% 50%
+    );
+
+
+}
+
+
+
+/* =========================
+   PAGE EXIT FADE
+========================= */
+
+
+body.page-exit > *:not(.page-transition){
+
+
+    animation:
+
+    pageFadeOut .45s ease forwards;
+
+
+}
+
+
+
+@keyframes pageFadeOut{
+
+
+    from{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+
+    to{
+
+        opacity:0;
+
+        transform:translateY(-20px);
+
+    }
 
 }

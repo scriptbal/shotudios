@@ -24,10 +24,9 @@ body{
 }
 
 
-/* =======================================
+/* ==========================================
    BACKGROUND
-======================================= */
-
+========================================== */
 
 .bg-light{
 
@@ -35,14 +34,15 @@ body{
 
     inset:0;
 
-    z-index:-20;
+    z-index:-30;
 
-    background:#f8f8f8;
+    background:
+
+        radial-gradient(circle at top,#ffffff 0%,#f5f7ff 45%,#eef3ff 100%);
 
 }
 
-
-.bg-light::after{
+.bg-light::before{
 
     content:"";
 
@@ -52,22 +52,24 @@ body{
 
     background:
 
-    radial-gradient(
-        circle at top,
-        rgba(255,255,255,.95),
-        transparent 60%
-    );
+        radial-gradient(circle at 20% 15%,
+        rgba(111,163,255,.16),
+        transparent 28%),
+
+        radial-gradient(circle at 80% 10%,
+        rgba(190,210,255,.20),
+        transparent 25%),
+
+        radial-gradient(circle at 50% 80%,
+        rgba(190,210,255,.18),
+        transparent 30%);
 
 }
-
-
-
 
 
 /* =======================================
    GLASS ORB
 ======================================= */
-
 
 .glass-orb{
 
@@ -76,9 +78,11 @@ body{
     border-radius:50%;
 
     background:
+
     rgba(255,255,255,.45);
 
-    backdrop-filter:blur(35px);
+    -webkit-backdrop-filter: blur(35px);
+    backdrop-filter: blur(35px);
 
     border:
 
@@ -94,35 +98,38 @@ body{
 
 }
 
-
 .orb1{
 
     width:250px;
+
     height:250px;
 
     top:100px;
+
     right:5%;
 
 }
 
-
 .orb2{
 
     width:180px;
+
     height:180px;
 
     left:6%;
+
     bottom:15%;
 
 }
 
-
 .orb3{
 
     width:120px;
+
     height:120px;
 
     right:25%;
+
     bottom:10%;
 
 }
@@ -854,5 +861,120 @@ nav{
     outline:none;
 
     box-shadow:none;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   PAGE TRANSITION
+===================================== */
+
+
+.page-transition{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:999999;
+
+
+    background:
+
+    radial-gradient(
+        circle,
+        #ffffff 0%,
+        #ecf1ff 45%,
+        #c7d5fd 100%
+    );
+
+
+    clip-path:
+
+    circle(
+        0% at 50% 50%
+    );
+
+
+    opacity:0;
+
+
+    transition:
+
+    clip-path .9s cubic-bezier(
+        .76,
+        0,
+        .24,
+        1
+    ),
+
+    opacity .5s ease;
+
+
+    pointer-events:none;
+
+}
+
+
+
+.page-transition.active{
+
+
+    opacity:1;
+
+
+    clip-path:
+
+    circle(
+        150% at 50% 50%
+    );
+
+
+}
+
+
+
+/* =========================
+   PAGE EXIT FADE
+========================= */
+
+
+body.page-exit > *:not(.page-transition){
+
+
+    animation:
+
+    pageFadeOut .45s ease forwards;
+
+
+}
+
+
+
+@keyframes pageFadeOut{
+
+
+    from{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+
+    to{
+
+        opacity:0;
+
+        transform:translateY(-20px);
+
+    }
 
 }
