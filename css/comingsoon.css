@@ -221,7 +221,7 @@ header{
 
     letter-spacing:2px;
 
-    color:#3B82F6;
+    color:#3f85c8;
 
     text-decoration:none;
 
@@ -253,7 +253,7 @@ nav a{
 
 nav a:hover{
 
-    color:#3B82F6;
+    color:#3f85c8;
 
 }
 
@@ -280,7 +280,7 @@ nav a:hover{
 
 .nav-button:hover{
 
-    background:#3B82F6;
+    background:#3f85c8;
 
     color:white;
 
@@ -355,7 +355,7 @@ nav a:hover{
 
 .hero h1 span{
 
-    color:#3B82F6;
+    color:#3f85c8;
 
 }
 
@@ -467,7 +467,7 @@ nav a:hover{
 
 .secondary-btn:hover{
 
-    background:#3B82F6;
+    background:#3f85c8;
 
     color:white;
 
@@ -651,7 +651,7 @@ nav a:hover{
 
 .testimonial-left span{
 
-    color:#3B82F6;
+    color:#3f85c8;
 
     letter-spacing:3px;
 

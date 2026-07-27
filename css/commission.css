@@ -23,7 +23,7 @@ Shotudios
 
 .commission-hero h1 span{
 
-    color:#3B82F6;
+    color:#3f85c8;
 
 }
 
@@ -131,7 +131,7 @@ PROGRESS
 
 .progress-step.active .circle{
 
-    background:#3B82F6;
+    background:#3f85c8;
 
     color:white;
 
@@ -261,7 +261,7 @@ SERVICE
 
     transform:translateY(-8px);
 
-    border-color:#3B82F6;
+    border-color:#3f85c8;
 
     box-shadow:
 
@@ -381,7 +381,7 @@ textarea{
 
 .form-group textarea:focus{
 
-    border-color:#3B82F6;
+    border-color:#3f85c8;
 
     box-shadow:
 
@@ -429,7 +429,7 @@ PACKAGE
 
     transform:translateY(-8px);
 
-    border-color:#3B82F6;
+    border-color:#3f85c8;
 
 }
 
@@ -451,7 +451,7 @@ PACKAGE
 
 .package-card h4{
 
-    color:#3B82F6;
+    color:#3f85c8;
 
     font-size:34px;
 
@@ -563,7 +563,7 @@ SIDEBAR
 
     margin-bottom:12px;
 
-    color:#3B82F6;
+    color:#3f85c8;
 
     text-decoration:none;
 
@@ -642,7 +642,7 @@ RESPONSIVE
 .service-card.active,
 .package-card.active{
 
-    border:2px solid #3B82F6;
+    border:2px solid #3f85c8;
 
     transform:translateY(-6px);
 
@@ -684,7 +684,7 @@ RESPONSIVE
 
 .upload-area:hover{
 
-    border-color:#3B82F6;
+    border-color:#3f85c8;
 
     background:rgba(255,255,255,.6);
 
@@ -692,7 +692,7 @@ RESPONSIVE
 
 .upload-area.dragover{
 
-    border-color:#3B82F6;
+    border-color:#3f85c8;
 
     background:rgba(59,130,246,.08);
 
@@ -885,7 +885,7 @@ RESPONSIVE
 
     height:100%;
 
-    background:#3B82F6;
+    background:#3f85c8;
 
     transition:width .2s linear;
 
@@ -1146,7 +1146,7 @@ cursor:pointer;
 
 .dot.active{
 
-background:#3B82F6;
+background:#3f85c8;
 
 transform:scale(1.2);
 
@@ -1256,7 +1256,7 @@ border:none;
 
 .nav-link-button:hover{
 
-    color:#3B82F6;
+    color:#3f85c8;
 
 }
 

@@ -220,7 +220,7 @@ header{
 
     letter-spacing:2px;
 
-    color: #3B82F6;
+    color: #3f85c8;
 
 }
 
@@ -231,7 +231,7 @@ header{
 
     text-decoration:none;
 
-    color:#3B82F6;
+    color:#3f85c8;
 
 }
 
@@ -263,7 +263,7 @@ nav a{
 
 nav a:hover{
 
-    color:#3B82F6;
+    color:#3f85c8;
 
 }
 
@@ -295,7 +295,7 @@ nav a:hover{
 
     transform:translateY(-3px);
 
-    background:#3B82F6;
+    background:#3f85c8;
 
 color: #fff;
 
@@ -368,7 +368,7 @@ color: #fff;
 
 .hero-left span{
 
-    color:#3B82F6;
+    color:#3f85c8;
 
 }
 
@@ -510,7 +510,7 @@ text-decoration: none;
 
     translateY(-5px);
 
-    background: #3B82F6;
+    background: #3f85c8;
 
     color: #fff;
 
@@ -872,7 +872,7 @@ FOOTER
 
     font-weight:700;
 
-    color:#3B82F6;
+    color:#3f85c8;
 
     letter-spacing:1px;
 
@@ -926,7 +926,7 @@ FOOTER
 
 .footer-column a:hover{
 
-    color:#3B82F6;
+    color:#3f85c8;
 
     transform:translateX(5px);
 
@@ -1487,7 +1487,7 @@ PORTFOLIO
 
     transform:translateY(-3px);
 
-    background:#3B82F6;
+    background:#3f85c8;
 
 color: #fff;
 
@@ -1678,7 +1678,7 @@ transform:
 
 translateY(-6px);
 
-background:#3B82F6;
+background:#3f85c8;
 
 color: #fff;
 
@@ -1748,7 +1748,7 @@ TESTIMONIAL SLIDER
 }
 
 .testimonial-dots .dot.active{
-    background:#3B82F6;
+    background:#3f85c8;
     transform:scale(1.2);
 }
 
