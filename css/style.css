@@ -213,15 +213,14 @@ header{
 }
 
 .logo{
-
-    font-size:30px;
-
-    font-weight:700;
-
-    letter-spacing:2px;
-
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.2rem;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 0.08em;
+    text-decoration: none;
     color: #3f85c8;
-
+    line-height: 1;
 }
 
 
@@ -868,16 +867,14 @@ FOOTER
 
 .footer-brand h2{
 
-    font-size:38px;
-
-    font-weight:700;
-
-    color:#3f85c8;
-
-    letter-spacing:1px;
-
-    margin-bottom:20px;
-
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.2rem;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    color: #3f85c8;
+    line-height: 1;
 }
 
 .footer-brand p{

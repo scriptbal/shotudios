@@ -224,19 +224,15 @@ header{
 }
 
 .logo{
-
-    text-decoration:none;
-
-    color:#4f7dff;
-
-    font-size:30px;
-
-    font-weight:700;
-
-    letter-spacing:1px;
-
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.2rem;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    color: #3f85c8;
+    line-height: 1;
 }
-
 nav{
 
     display:flex;
@@ -259,7 +255,7 @@ nav a{
 
 nav a:hover{
 
-    color:#4f7dff;
+    color:#3f85c8;
 
 }
 
@@ -289,7 +285,7 @@ nav a:hover{
 
 .nav-button:hover{
 
-    background:#4f7dff;
+    background:#3f85c8;
 
     color:#fff;
 
@@ -324,7 +320,7 @@ nav a:hover{
 
     border:1px solid rgba(255,255,255,.85);
 
-    color:#4f7dff;
+    color:#3f85c8;
 
     font-size:13px;
 
@@ -348,7 +344,7 @@ nav a:hover{
 
 .portfolio-hero h1 span{
 
-    color:#4f7dff;
+    color:#3f85c8;
 
 }
 
@@ -549,7 +545,7 @@ font-size:38px;
 
     transform:translateY(-3px);
 
-    color:#4f7dff;
+    color:#3f85c8;
 
 }
 
@@ -616,7 +612,7 @@ font-size:38px;
 
     transform:translateY(-3px);
 
-    color:#4f7dff;
+    color:#3f85c8;
 
 }
 
@@ -767,7 +763,7 @@ transition:.5s;
 
     background:white;
 
-    color:#4f7dff;
+    color:#3f85c8;
 
     font-size:12px;
 
@@ -800,7 +796,7 @@ transition:.5s;
 
     backdrop-filter:blur(20px);
 
-    color:#4f7dff;
+    color:#3f85c8;
 
     font-size:34px;
 
@@ -965,7 +961,7 @@ rgba(121, 195, 255, 0.315)
 
     backdrop-filter:blur(20px);
 
-    color:#4f7dff;
+    color:#3f85c8;
 
     font-size:18px;
 
@@ -1259,5 +1255,120 @@ body.page-exit > *:not(.page-transition){
         transform:translateY(-20px);
 
     }
+
+}
+
+
+
+
+
+
+
+/* =======================================
+FOOTER
+======================================= */
+
+.footer{
+
+    padding:90px 0 30px;
+
+    background:rgba(255,255,255,.45);
+
+    -webkit-backdrop-filter:blur(30px);
+    backdrop-filter:blur(30px);
+
+    border-top:1px solid rgba(255,255,255,.8);
+
+    margin-top:10px;
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:1.5fr 1fr 1fr 1fr;
+
+    gap:80px;
+
+}
+
+.footer-brand h2{
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.2rem;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    color: #3f85c8;
+    line-height: 1;
+}
+
+.footer-brand p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    max-width:280px;
+
+    font-size:18px;
+
+}
+
+.footer-column h3{
+
+    font-size:22px;
+
+    margin-bottom:25px;
+
+    color:#111;
+
+}
+
+.footer-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+.footer-column a{
+
+    text-decoration:none;
+
+    color:#666;
+
+    transition:.3s;
+
+    width:fit-content;
+
+}
+
+.footer-column a:hover{
+
+    color:#3f85c8;
+
+    transform:translateX(5px);
+
+}
+
+.footer-bottom{
+
+    margin-top:70px;
+
+    padding-top:25px;
+
+    border-top:1px solid rgba(0,0,0,.08);
+
+    text-align:center;
+
+    color:#888;
+
+    font-size:15px;
 
 }
